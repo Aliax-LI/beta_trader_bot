@@ -33,6 +33,13 @@ ENV/
 *.swo
 *~
 
+# Cursor IDE
+.cursor/
+.cursorignore
+
+# OpenSpec
+openspec/
+
 # 日志
 logs/
 *.log
