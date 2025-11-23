@@ -1,0 +1,20 @@
+# 配对交易对配置
+pairs:
+  - name: "BTC_ETH"
+    asset1: "BTC/USDT"
+    asset2: "ETH/USDT"
+    exchange: "binance"
+    enabled: true
+    lookback_period: 60
+    z_entry_threshold: 2.0
+    z_exit_threshold: 0.5
+  
+  - name: "BTC_BNB"
+    asset1: "BTC/USDT"
+    asset2: "BNB/USDT"
+    exchange: "binance"
+    enabled: true
+    lookback_period: 60
+    z_entry_threshold: 2.0
+    z_exit_threshold: 0.5
+

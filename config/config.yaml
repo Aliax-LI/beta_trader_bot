@@ -1,0 +1,32 @@
+app:
+  name: "Pairs Trading Bot"
+  version: "1.0.0"
+  environment: "development"  # development, testing, production
+
+strategy:
+  pairs_trading:
+    lookback_period: 60      # 回看期（数据点数）
+    z_entry_threshold: 2.0   # 入场Z-score阈值
+    z_exit_threshold: 0.5    # 出场Z-score阈值
+    position_size: 0.1       # 仓位大小（总资金的10%）
+    max_position: 0.2        # 最大仓位限制
+    correlation_threshold: 0.8  # 最小相关性阈值
+    stop_loss_z: 3.0         # 止损Z-score阈值
+
+backtest:
+  initial_cash: 100000       # 初始资金
+  commission: 0.001          # 交易手续费（0.1%）
+  start_date: "2023-01-01"   # 回测开始日期
+  end_date: "2023-12-31"     # 回测结束日期
+
+trading:
+  enabled: false             # 是否启用实盘交易
+  sandbox: true              # 是否使用测试环境
+  update_interval: 300       # 数据更新间隔（秒）
+
+logging:
+  level: "INFO"              # DEBUG, INFO, WARNING, ERROR
+  file: "logs/pairs_trading.log"
+  max_bytes: 10485760        # 10MB
+  backup_count: 5
+

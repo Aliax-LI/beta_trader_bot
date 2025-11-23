@@ -1,0 +1,22 @@
+exchanges:
+  binance:
+    name: "Binance"
+    enabled: true
+    sandbox: true
+    rate_limit: 1200
+    timeout: 30000
+    pairs:
+      - "BTC/USDT"
+      - "ETH/USDT"
+      - "BNB/USDT"
+  
+  okx:
+    name: "OKX"
+    enabled: false
+    sandbox: true
+    rate_limit: 1000
+    timeout: 30000
+    pairs:
+      - "BTC/USDT"
+      - "ETH/USDT"
+
